@@ -79,6 +79,18 @@ sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m"
 sleep 2 ; nohup python Proxypython.py ;
 sleep 3 ; echo -e"\e[7mCorrecto!\e[0m"
 
+sleep 3 ;echo -e "\e[7mDeseas crear un user a tu vps?\e[0m"
+           select yn in "SI" "NO" ; do
+             case $yn in
+                   SI) wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/usuarios
+                   NO)exit ;;
+ esac
+done
+
+
+
+
+
 
 
 echo  LIBERANDO ARCHIVOS RESIDUALES
