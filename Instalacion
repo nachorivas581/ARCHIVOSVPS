@@ -48,56 +48,6 @@ sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 
 sleep 2 ; nano Proxypython.py ; echo Completado!
 sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m"
 sleep 2 ; nohup python proxy.py  ; sleep 3 ; echo -e "\e[7mCorrecto!\e[0m"
-#!/bin/bash
-echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗";
-echo "██╔════╝██║░░██║██╔══██╗██╔══██╗██║░██╔╝██║░░░██║██╔══██╗██╔════╝";
-echo "╚█████╗░███████║███████║██████╔╝█████═╝░╚██╗░██╔╝██████╔╝╚█████╗░";
-echo  "╚═══██╗██╔══██║██╔══██║██╔══██╗██╔═██╗░░╚████╔╝░██╔═══╝░░╚═══██╗";
-echo "██████╔╝██║░░██║██║░░██║██║░░██║██║░╚██╗░░╚██╔╝░░██║░░░░░██████╔╝";
-echo "╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░╚═════╝░";
-
-
-sleep 2 ; echo Recuerda que necesitamos que nos concedas permisos de SuperUsuario para Continuar ;
-sleep 2 ; echo -e "\e[91mSi no tienes Dichos Permisos Tendras errores en la instalacion!\e[0m"
-sleep 2 ; echo "Muchas Gracias"
-sleep 3; echo Estamos actualizando la consola &&
-sleep 2;apt update -y ; apt upgrade -y ; apt install nano 
-
-sleep 4 ; echo Espera un momento ;sleep 2; echo . ;sleep 1 ; echo . ; sleep 1 ; echo .; sleep 1  ; echo . ; sleep 3 ;sleep 1  ; echo .
-sleep 1 ;echo . ; sleep 1 ; echo "--------------------------------------------------------------------------------------------" ;
-sleep 1 ; echo "--------------------------------------------------------------------------------------------"
-sleep 1 ; echo "--------------------------------------------------------------------------------------------"
-sleep 1 ; echo "--------------------------------------------------------------------------------------------"
-sleep 1 ; echo "--------------------------------------------------------------------------------------------"
-sleep 1 ; echo "--------------------------------------------------------------------------------------------"
-sleep 3;echo -e "\e[32mEXITO!\e[0m" ; 
-sleep 3 ; echo -e "\e[106mInstalaremos los archivos necesarios!\e[0m"
-sleep 3 ;echo -e "\e[101mBuscando Archivos!\e[0m" ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo .;sleep 1 ;echo .
-sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo .
-sleep 3 ;echo -e "\e[7mAccediendo\e[0m";sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m"
-sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m";sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m";
-sleep 3 ;echo -e "\e[7mPermisos concedidos!\e[0m"
-sleep 3 ;echo -e "\e[91mAguarde un Momento\e[0m"
-sleep 6 ;echo -e "\e[7mDescargando Archivos\e[0m"; sleep 3 ; echo -e "\e[36mDescargando Dropbear\e[36m" && sleep 2;apt-get install dropbear -y
-sleep 2 ;echo -e "\e[32mCORRECTO!\e[0m" 
-sleep 3 ; echo -e "\e[36mDescargando Python\e[36m" && sleep 2;apt-get install python -y ;apt-get install python2- y;apt install python-pip
-sleep 3 ; echo -e "\e[36mDescargando BADVPN\e[36m" && apt-get install wget && apt install make -y ; apt install cmake -y; wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/badvpn/badvpn-1.999.128.tar.bz2 -o /dev/null
-sleep 4 ;echo -e "\e[36mComienza La instalacion del Proxy Abono\e[0m"
-sleep 2 ; wget https://github.com/nachorivas581/ARCHIVOSVPS/blob/main/Proxypython.py
-sleep 3 ; echo -e "\e[32mInstalacion BADVPN!\e[0m" sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/badvpnsetup.sh
-sleep 1 ; echo -e "\e[7mCorrecto!\e[0m" && sleep 2 ; echo -e "\e[36mComenzando instalacion\e[0m"
-sleep 3 ; bash badvpnsetup.sh ; echo -e "\e[7mExito!\e[0m"
-sleep 3 ; echo -e "\e[7mComenzando Configuraciones!\e[0m" ; sleep 3 ; echo -e "\e[32mSi eres de android cambia el puerto por 8022!\e[0m";sleep 2 ; echo -e "\e[32mSi no lo eres pon el puerto 443 y guarda los cambios\e[0m"
-sleep 6 ; nano /etc/dropbear/run ; echo Finalizado
-sleep 2 ; echo "En caso de que no este activado el dropbear  ubica el  NO_START:1 y Cambialo por NO_START:0 Y GUARDA LA CONFIGURACION"
-sleep 3 ;nano /etc/init.d/dropbear ; echo  Finalizado
-sleep 1 ; echo -e "\e[7mEl BADVPN ha sido configurado!\e[0m" 
-sleep 2 ;  echo -e "\e[91mActivando BADVPN!\e[0m"
-sleep 3 ; badvpn start
-sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e "\e[32mRecuerda solo modificar las ip y los nombres!\e[0m"
-sleep 2 ; nano Proxypython.py ; echo Completado!
-sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m"
-sleep 2 ; nohup python proxy.py  ; sleep 3 ; echo -e "\e[7mCorrecto!\e[0m"
 echo -e "\e[7mQuieres Agregar un Usuario a tu vps?\e[0m"
            select yn in "SI" "NO" ; do
              case $yn in
@@ -106,4 +56,4 @@ echo -e "\e[7mQuieres Agregar un Usuario a tu vps?\e[0m"
 
                    esac
                    done
-                   
+            echo -e "\e[7mYa puedes conectarte a tu vps! \e[0m"       
