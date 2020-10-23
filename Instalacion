@@ -65,4 +65,6 @@ sleep 3 ;echo -e "\e[7mQuieres Agregar un Usuario a tu vps?\e[0m"
 
                    esac
                    done
-            echo -e "\e[7mYa puedes conectarte a tu vps! \e[0m"       
+sleep 3 ; echo -e "\e[7mDescargando AutoStart! \e[0m"
+sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Autostart
+sleep 2 ; bash Autostart
