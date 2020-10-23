@@ -45,4 +45,6 @@ sleep 1 ; echo -e "\e[7mEl BADVPN ha sido configurado!\e[0m"
 sleep 2 ;  echo -e "\e[91mActivando BADVPN!\e[0m"
 sleep 3 ; badvpn start
 sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e "\e[32mRecuerda solo modificar las ip y los nombres!\e[0m"
-sleep 2 ; nano python Proxypython.py 
+sleep 2 ; nano Proxypython.py ; echo Completado!
+sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m"
+sleep 2 ; nohup python proxy.py  ; sleep 3 ; echo -e "\e[7mCorrecto!\e[0m"
