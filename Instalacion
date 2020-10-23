@@ -13,19 +13,47 @@ sleep 2 ; echo "Muchas Gracias"
 sleep 3; echo Estamos actualizando la consola &&
 sleep 2;apt update -y ; apt upgrade -y ; apt install nano 
 
-sleep 4 ; echo Espera un momento ;sleep 2; echo . ;sleep 1 ; echo . ; sleep 1 ; echo .; sleep 1  ; echo . ; sleep 3 ;sleep 1  ; echo .
-sleep 1 ;echo . ; sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗" ;
-sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
-sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
-sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
-sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
-sleep 1 ; echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 4 ; echo Espera un momento 
+sleep 1 ; echo "5%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗" ;
+sleep 1 ; echo "10%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "15%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "20%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "30%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "60%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "70%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "80%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "90%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
+sleep 1 ; echo "100%░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗"
 sleep 3;echo -e "\e[32mEXITO!\e[0m" ; 
 sleep 3 ; echo -e "\e[106mInstalaremos los archivos necesarios!\e[0m"
-sleep 3 ;echo -e "\e[101mBuscando Archivos!\e[0m" ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo .;sleep 1 ;echo .
-sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo . ;sleep 1 ;echo .
-sleep 3 ;echo -e "\e[7mAccediendo\e[0m";sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m" ; sleep 1 ;echo -e "\e[7m.\e[0m"
-sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m";sleep 1 ;echo -e "\e[7m.\e[0m"; sleep 1 ;echo -e "\e[7m.\e[0m";
+sleep 3 ;echo -e "\e[101mBuscando Archivos!\e[0m"
+sleep 1; echo  "5%████"
+sleep 1 ;echo "10%██████"
+sleep 1 ;echo "15%██████████"
+sleep 1 ;echo "20%█████████████"
+sleep 1 ;echo "30%███████████████"
+sleep 1 ;echo "40%█████████████████"
+sleep 1 ;echo "50%████████████████████"
+sleep 1 ;echo "60%███████████████████████"
+sleep 1 ;echo "70%█████████████████████████"
+sleep 1 ;echo "80%████████████████████████████"
+sleep 1 ;echo "90%███████████████████████████████"
+sleep 1;echo "100%████████████████████████████████████"
+
+sleep 3 ;echo -e "\e[7mAccediendo\e[0m"
+sleep 1; echo  "5%████"
+sleep 1 ;echo "10%██████"
+sleep 1 ;echo "15%██████████"
+sleep 1 ;echo "20%█████████████"
+sleep 1 ;echo "30%███████████████"
+sleep 1 ;echo "40%█████████████████"
+sleep 1 ;echo "50%████████████████████"
+sleep 1 ;echo "60%███████████████████████"
+sleep 1 ;echo "70%█████████████████████████"
+sleep 1 ;echo "80%████████████████████████████"
+sleep 1 ;echo "90%███████████████████████████████"
+sleep 1;echo "100%████████████████████████████████████"
+"
 sleep 3 ;echo -e "\e[7mPermisos concedidos!\e[0m"
 sleep 3 ;echo -e "\e[91mAguarde un Momento\e[0m"
 sleep 6 ;echo -e "\e[7mDescargando Archivos\e[0m"; sleep 3 ; echo -e "\e[36mDescargando Dropbear\e[36m" && sleep 2;apt-get install dropbear -y
@@ -47,6 +75,8 @@ sleep 3 ;echo -e "\e[7mDeseas Activar BADVPN ahora?\e[0m"
              case $yn in
                    SI) nohup bash /etc/dropbear/run; break ;;
                    NO)exit ;;
+                    esac
+                   done
 sleep 3 ;echo -e "\e[7mDeseas Activar BADVPN ahora?\e[0m"
            select yn in "SI" "NO" ; do
              case $yn in
