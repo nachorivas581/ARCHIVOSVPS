@@ -72,47 +72,6 @@ sleep 6 ; nano /etc/dropbear/run ; echo Finalizado
 sleep 2 ; echo "En caso de que no este activado el dropbear  ubica el  NO_START:1 y Cambialo por NO_START:0 Y GUARDA LA CONFIGURACION"
 sleep 3 ;nano /etc/init.d/dropbear ; echo  Finalizado
 sleep 1 ; echo -e "\e[7mEl Dropbear ha sido configurado!\e[0m"
-sleep 3 ;echo -e "\e[7mDeseas Activar Dropbear ahora?\e[0m"
-           select yn in "SI" "NO" ; do
-             case $yn in
-                   SI) nohup bash /etc/dropbear/run; break ;;
-                   NO)sleep 3 ;echo -e "\e[7mDeseas Activar BADVPN ahora?\e[0m"
-           select yn in "SI" "NO" ; do
-             case $yn in
-                   SI) badvpn start; break ;;
-                   NO)sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e 
-"\e[32mRecuerda solo modificar las ip y los nombres!\e[0m" sleep 2 ; nano Proxypython.py ; echo Completado! sleep 
-3 ; echo -e "\e[7mActivando Puerto Python!\e[0m" sleep 2 ; nohup python proxy.py ; sleep 3 ; echo -e 
-"\e[7mCorrecto!\e[0m" sleep 3 ;echo -e "\e[7mQuieres Agregar un Usuario a tu vps?\e[0m"
-           select yn in "SI" "NO" ; do
-             case $yn in
-                   SI) wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/usuarios ;sleep 2 ;bash usuarios;break ;;
-                   NO)exit ;;
-                   esac
-                   done
- esac
- done
- esac 
-done
-
-
-
-sleep 3 ;echo -e "\e[7mDeseas Activar BADVPN ahora?\e[0m"
-           select yn in "SI" "NO" ; do
-             case $yn in
-                   SI) badvpn start; break ;;
-                   NO)sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e
-"\e[32mRecuerda solo modificar las ip y los nombres!\e[0m" sleep 2 ; nano Proxypython.py ; echo Completado! sleep
-3 ; echo -e "\e[7mActivando Puerto Python!\e[0m" sleep 2 ; nohup python proxy.py ; sleep 3 ; echo -e
-"\e[7mCorrecto!\e[0m"
-esac
-done
-
-sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e"\e[32mRecuerda solo modificar las ip y los nombres!\e[0m";sleep 2 ; nano Proxypython.py ; echo Completado! ;sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m" sleep 2 ; nohup python proxy.py ; sleep 3 ; echo -e"\e[7mCorrecto!\e[0m"
-
-
-
-
 sleep 3 ;echo -e "\e[7mEliminando Archivos no necesarios\e[0m" sleep 3; echo ">>>Eliminando Instalacion<<<" sleep 
 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . rm Instalacion ; echo "ELIMINADA CON EXITO" sleep 3 
 ;echo ">>>Eliminando badvpn<<<" sleep 2 ; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . rm 
