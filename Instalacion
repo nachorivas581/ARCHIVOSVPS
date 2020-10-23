@@ -34,6 +34,12 @@ sleep 3 ; echo -e "\e[36mDescargando Python\e[36m" && sleep 2;apt-get install py
 sleep 3 ; echo -e "\e[36mDescargando BADVPN\e[36m" && apt-get install wget && apt install make -y ; apt install cmake -y; wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/badvpn/badvpn-1.999.128.tar.bz2 -o /dev/null
 sleep 4 ;echo -e "\e[36mComienza La instalacion del Proxy Abono\e[0m"
 sleep 2 ; wget https://github.com/nachorivas581/ARCHIVOSVPS/blob/main/Proxypython.py
-sleep 3 ; echo -e "\e[32mDescargando Manual de Instalacion BADVPN!\e[0m" sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/badvpnsetup.sh
+sleep 3 ; echo -e "\e[32mInstalacion BADVPN!\e[0m" sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/badvpnsetup.sh
 sleep 1 ; echo -e "\e[7mCorrecto!\e[0m" && sleep 2 ; echo -e "\e[36mComenzando instalacion\e[0m"
 sleep 3 ; bash badvpnsetup.sh ; echo -e "\e[7mExito!\e[0m"
+sleep 3 ; echo -e "\e[7mComenzando Configuraciones!\e[0m" ; sleep 1 ; echo -e "\e[32mSi eres de android cambia el puerto por 8022!\e[0m";sleep 2 ; echo -e "\e[32mSi no lo eres pon ctrl -->X y deja que continue\e[0m"
+sleep 6 ; nano /etc/dropbear/run ; echo Finalizado
+sleep 2 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/ConfiguracionBadvpn && bash ConfiguracionBadvpn
+sleep 1 ; echo -e "\e[7mEl BADVPN ha sido configurado!\e[0m" 
+sleep 2 ;  echo -e "\e[91mActivando BADVPN!\e[0m"
+sleep 1 ; badvpn start
