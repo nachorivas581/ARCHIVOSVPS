@@ -35,4 +35,5 @@ sleep 3 ; echo -e "\e[36mDescargando BADVPN\e[36m" && apt-get install wget && ap
 sleep 4 ;echo -e "\e[36mComienza La instalacion del Proxy Abono\e[0m"
 sleep 2 ; wget https://github.com/nachorivas581/ARCHIVOSVPS/blob/main/Proxypython.py
 sleep 3 ; echo -e "\e[32mDescargando Manual de Instalacion BADVPN!\e[0m" sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/badvpnsetup.sh
-sleep 1 ; echo -e "\e[7mCorrecto!\e[0m" && sleep 2 ; echo -e "\e[36mPara comenzar la instalacion escribe (bash badvpnsetup.sh)\e[0m"
+sleep 1 ; echo -e "\e[7mCorrecto!\e[0m" && sleep 2 ; echo -e "\e[36mComenzando instalacion\e[0m"
+sleep 3 ; bash badvpnsetup.sh ; echo -e "\e[7mExito!\e[0m"
