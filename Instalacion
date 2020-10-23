@@ -121,7 +121,5 @@ sleep 3 ;echo -e "\e[7mEliminando Archivos no necesarios\e[0m" sleep 3; echo ">>
 ;echo ">>>Eliminando badvpn<<<" sleep 2 ; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . rm 
 badvpn-1.999.128.tar.bz2 ; rm -r badvpn -1.999.128 ;rm badvpnsetup.sh sleep 3 ;echo -e "\e[7mArchivos Eliminados 
 Con exito\e[0m" sleep 3 ;echo -e "\e[100mDescargando Archivo Autoejecutable\e[0m" sleep 3 ; echo -e 
-"\e[7mDescargando AutoStart! \e[0m" sleep 3 ; wget 
-https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Autostart sleep 2 ; bash Autostart sleep 3 ; echo 
--e "\e[7mYa puedes Conectarte a tu VPS! \e[0m"
+"\e[7mDescargando AutoStart! \e[0m" sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Autostart sleep 2 ; bash Autostart sleep 3 ; echo -e "\e[7mYa puedes Conectarte a tu VPS! \e[0m"
 
