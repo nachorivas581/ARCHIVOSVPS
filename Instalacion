@@ -39,7 +39,8 @@ sleep 1 ; echo -e "\e[7mCorrecto!\e[0m" && sleep 2 ; echo -e "\e[36mComenzando i
 sleep 3 ; bash badvpnsetup.sh ; echo -e "\e[7mExito!\e[0m"
 sleep 3 ; echo -e "\e[7mComenzando Configuraciones!\e[0m" ; sleep 1 ; echo -e "\e[32mSi eres de android cambia el puerto por 8022!\e[0m";sleep 2 ; echo -e "\e[32mSi no lo eres pon ctrl -->X y deja que continue\e[0m"
 sleep 6 ; nano /etc/dropbear/run ; echo Finalizado
-sleep 2 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/ConfiguracionBadvpn && bash ConfiguracionBadvpn
+sleep 2 ; echo "En caso de que no este activado el dropbear  ubica el  NO_START:1 y Cambialo por NO_START:0 Y GUARDA LA CONFIGURACION"
+nano /etc/init.d/dropbear ; echo  Finalizado
 sleep 1 ; echo -e "\e[7mEl BADVPN ha sido configurado!\e[0m" 
 sleep 2 ;  echo -e "\e[91mActivando BADVPN!\e[0m"
 sleep 1 ; badvpn start
