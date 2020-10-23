@@ -88,6 +88,7 @@ sleep 3 ;echo -e "\e[7mDeseas Activar BADVPN ahora?\e[0m"
 
                    esac
                    done
+                   
 sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m" ; sleep 2 ; echo -e "\e[32mRecuerda solo modificar las ip y los nombres!\e[0m"
 sleep 2 ; nano Proxypython.py ; echo Completado!
 sleep 3 ; echo -e "\e[7mActivando Puerto Python!\e[0m"
