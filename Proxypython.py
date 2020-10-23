@@ -5,7 +5,7 @@ import socket, threading, thread, select, signal, sys, time, getopt
 # Python Proxy
 
 # CONFIG
-LISTENING_ADDR = '0.0.0.0'
+LISTENING_ADDR = 'IP LOCAL'
 LISTENING_PORT = 4443
 
 PASS = ''
@@ -13,7 +13,7 @@ PASS = ''
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:22'
+DEFAULT_HOST = '127.0.0.1:(PUERTO DEL DROPBEAR)'
 RESPONSE = 'HTTP/1.1 200 <font color="red">(Su Nombre)</font> <font color="blue">Zona de la drop</font>\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'
 #RESPONSE = 'HTTP/1.1 200 Hello_World!\r\nContent-length: 0\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\n'  # lint:ok
 
