@@ -1,8 +1,8 @@
-echo -e "\e[7mElije el usuario?\e[0m"
-           select yn in "abono" "otro" "prepago" ; do
+echo -e "\e[7mElige el usuario\e[0m"
+           select yn in "abono" "libre" "prepago" ; do
              case $yn in
                    abono) adduser abono;break ;;
-                   otro) adduser otro ;;
+                   libre) adduser libre ;;
                    prepago) adduser prepago ;;
                    esac
                    done
