@@ -1,6 +1,6 @@
 #!/bin/bash
 sleep 2 ; echo Recuerda que ecesitamos que nos concedas permisos de SuperUsuario para Continuar ;
-sleep 2 ; echo -e "\e[91mSi no tienes Dichos Permisos Tendras errores en la instlacion!\e[0m"
+sleep 2 ; echo -e "\e[91mSi no tienes Dichos Permisos Tendras errores en la instalacion!\e[0m"
 sleep 2 ; echo "Muchas Gracias"
 sleep 3; echo Estamos actualizando la consola &&
 sleep 2;apt update -y ; apt upgrade -y
