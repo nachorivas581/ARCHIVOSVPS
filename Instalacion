@@ -30,6 +30,6 @@ sleep 6 ;echo -e "\e[7mDescargando Archivos\e[0m"; sleep 3 ; echo -e "\e[36mDesc
 sleep 2 ;echo -e "\e[32mCORRECTO!\e[0m" 
 sleep 3 ; echo -e "\e[36mDescargando Python\e[36m" && sleep 2;apt-get install python -y ;apt-get install python2- y;apt install pip -y
 sleep 3 ; echo -e "\e[36mDescargando BADVPN\e[36m" && apt-get install wget && apt install make ; apt install cmake ; wget https://github.com/nachorivas581/ARCHIVOSVPS/blob/main/badvpn-1.999.128.tar.bz2 
-sleep 2 ;/.tar -xf badvpn-1.999.128.tar.bz2  ; cd badvpn-1.999.128/ ; cmake ~/badvpn-1.999.128 -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1 ;make install ; badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/null & ; wget https://raw.githubusercontent.com/powermx/badvpn/master/easyinstall && bash easyinstall
+sleep 2 ; tar -xf badvpn-1.999.128.tar.bz2  ; cd badvpn-1.999.128 ; cmake ~/badvpn-1.999.128 -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1 ;make install ; badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/null & ; wget https://raw.githubusercontent.com/powermx/badvpn/master/easyinstall && bash easyinstall
 sleep 3 ;echo -e "\e[32mCORRECTO!\e[0m"
 sleep 2 ; echo TERMINADO && rm Instalacion
