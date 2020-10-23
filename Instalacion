@@ -56,7 +56,6 @@ sleep 2 ;echo "70%████████████████████�
 sleep 3 ;echo "80%████████████████████████████"
 sleep 2 ;echo "90%███████████████████████████████"
 sleep 5;echo "100%████████████████████████████████████"
-"
 sleep 3 ;echo -e "\e[7mPermisos concedidos!\e[0m"
 sleep 3 ;echo -e "\e[91mAguarde un Momento\e[0m"
 sleep 6 ;echo -e "\e[7mDescargando Archivos\e[0m"; sleep 3 ; echo -e "\e[36mDescargando Dropbear\e[36m" && sleep 2;apt-get install dropbear -y
@@ -103,10 +102,10 @@ sleep 3 ;echo -e "\e[7mQuieres Agregar un Usuario a tu vps?\e[0m"
                    done
                    
 sleep 3 ;echo -e "\e[7mEliminando Archivos no necesarios\e[0m"
-sleep 3;echo  ">>>Eliminando Instalacion<<<<"
+sleep 3; echo ">>>Eliminando Instalacion<<<"
 sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo .
 rm Instalacion ; echo "ELIMINADA CON EXITO"
-sleep 3 ;echo ">>>Eliminando badvpn<<<<"
+sleep 3 ;echo ">>>Eliminando badvpn<<<"
 sleep 2 ; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo .
 rm badvpn-1.999.128.tar.bz2 ; rm -r badvpn -1.999.128 ;rm badvpnsetup.sh
 
