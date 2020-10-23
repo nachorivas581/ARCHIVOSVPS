@@ -11,7 +11,7 @@ sleep 2 ; echo Recuerda que necesitamos que nos concedas permisos de SuperUsuari
 sleep 2 ; echo -e "\e[91mSi no tienes Dichos Permisos Tendras errores en la instalacion!\e[0m"
 sleep 2 ; echo "Muchas Gracias"
 sleep 3; echo Estamos actualizando la consola &&
-sleep 2;apt update -y ; apt upgrade -y
+sleep 2;apt update -y ; apt upgrade -y ; apt-install nano 
 
 sleep 4 ; echo Espera un momento ;sleep 2; echo . ;sleep 1 ; echo . ; sleep 1 ; echo .; sleep 1  ; echo . ; sleep 3 ;sleep 1  ; echo .
 sleep 1 ;echo . ; sleep 1 ; echo "--------------------------------------------------------------------------------------------" ;
