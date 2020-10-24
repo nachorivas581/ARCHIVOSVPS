@@ -3,7 +3,7 @@ echo "🅰🆄🆃🅾🆂🆃🅰🆁🆃"
 echo -e "\e[7mDeseas iniciar los servicios?\e[0m"
            select yn in "SI" "NO" ; do
              case $yn in
-                   SI )sleep 3;echo -e "\e[91mInciando BADVPN!\e[0m" ; sleep 3 ; badvpn start ; sleep 2 ;echo -e "\e[36mBadVPN Ha sido Iniciado!\e[0m" ; sleep 3;echo -e "\e[91mInciando Dropbear!\e[0m"; sleep 3 ;nohup bash /etc/dropbear/run; sleep 3 ;echo -e "\e[36mDropbear Ha sido Iniciado!\e[0m" ;sleep 3 ;echo -e "\e[91mIniciando Proxy Abono!\e[0m" ;sleep 3 ; nohup python Proxypython.py; sleep 3 ;echo -e "\e[36mProxy Abono se inicio con exito!\e[0m";sleep 3;echo -e "\e[92mTodos Los servicios fueron Iniciados!\e[0m"; break ;;
+                   SI )sleep 3;echo -e "\e[91mInciando BADVPN!\e[0m" ; sleep 3 ; badvpn start ; sleep 2 ;echo -e "\e[36mBadVPN Ha sido Iniciado!\e[0m" ; sleep 3;echo -e "\e[91mInciando Dropbear!\e[0m"; sleep 3 ;nohup bash /etc/dropbear/run && sleep 3 ;echo -e "\e[36mDropbear Ha sido Iniciado!\e[0m" ;sleep 3 ;echo -e "\e[91mIniciando Proxy Abono!\e[0m" ;sleep 3 ; nohup python Proxypython.py && sleep 3 ;echo -e "\e[36mProxy Abono se inicio con exito!\e[0m";sleep 3;echo -e "\e[92mTodos Los servicios fueron Iniciados!\e[0m"; break ;;
                    NO )exit ;;
                    esac
                    done
