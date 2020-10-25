@@ -81,10 +81,7 @@ sleep 3 ;echo -e "\e[7mDeseas crear un user a tu vps?\e[0m"
            select yn in "SI" "NO" ; do
              case $yn in
                    SI) wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/usuarios ;bash usuarios ; break;;
-                   NO)exit ;;
- esac
-done
-echo  LIBERANDO ARCHIVOS RESIDUALES
+                   NO)echo  LIBERANDO ARCHIVOS RESIDUALES
 sleep 3 ;echo -e "\e[7mEliminando Archivos no necesarios\e[0m" 
 sleep 3; echo ">>>Eliminando Instalacion<<<"
 sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;rm Instalacion ; echo "ELIMINADA CON EXITO"
@@ -97,4 +94,5 @@ sleep 3 ; echo -e "\e[7mDescargando AutoStart! \e[0m"
 sleep 3 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Autostart
 sleep 2 ; bash Autostart 
 sleep 3 ; echo -e "\e[7mYa puedes Conectarte a tu VPS! \e[0m"
-
+esac
+done
