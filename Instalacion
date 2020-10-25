@@ -96,3 +96,14 @@ sleep 2 ; bash Autostart
 sleep 3 ; echo -e "\e[7mYa puedes Conectarte a tu VPS! \e[0m"
 esac
 done
+
+sleep 3 ; echo -e"\e[7mDeseas Visualizar Servidor Mediante VNC?\e[0m"
+select yn in "SI" "NO" ; do
+             case $yn in
+             SI)apt update
+             sleep 2;apt install xfce4 xfce4-goodies
+             sleep 2;apt install vnc4server ;echo " Tipea "vncserver" " break ;;
+             
+             NO) exit ;;
+             esac 
+             done
