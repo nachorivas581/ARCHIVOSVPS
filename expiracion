@@ -1,0 +1,16 @@
+#!/bin/bash
+echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
+read Nombre
+echo -e "\e[32mDigite Dia (TIPO DD/)expiracion:\e[0m"
+read Dia
+echo -e "\e[32mDigite Mes (tipo MM/) expiracion:\e[0m"
+read Mes
+echo -e "\e[32mDigite Ano (tipo /AAAA) expiracion:\e[0m"
+read Ano
+usermod -e $Ano-$Mes-$Dia $Nombre
+sleep 3;echo -e "\e[32mUsuario Modificado Con Exito!\e[0m"
+sleep 2; echo "Sus datos son:
+Usuario:$Nombre
+Fecha de expiracion :$Dia-$Mes-$Ano
+By:SharkLight"
+
