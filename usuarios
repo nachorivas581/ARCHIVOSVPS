@@ -1,4 +1,14 @@
 #!/bin/bash
 echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
-adduser $Nombre
+echo "Su nombre es $Nombre"
+echo -e "\e[32mDigite Dia (TIPO DD/)duracion:\e[0m"
+read $Dia
+echo "Dias $Dia"
+echo -e "\e[32mDigite Mes (tipo MM/) duracion:\e[0m"
+read $Mes
+echo "Mes $Mes
+echo -e "\e[32mDigite AÑO (tipo /AAAA) duracion:\e[0m"
+read $AÑO
+echo " AÑO $AÑO"
+adduser - m -e $Dia-$Mes-AÑO $Nombre
