@@ -5,7 +5,7 @@ echo -e "\e[32mSeleccione Una Opcion:\e[0m"
              case $yn in
                    "1) Instalar VPS") bash Instalacion ; exit;;
                    "2) Configurar VPS/Puertos/Etc") bash expiracion ; exit;;
-                    "3) Usuarios")  ; exit;;
+                    "3) Usuarios") bash menuuser; exit;;
                     "4) Cerrar") exit ;;
 esac
 done
