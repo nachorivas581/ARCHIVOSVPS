@@ -4,7 +4,7 @@ echo -e "\e[32mSeleccione Una Opcion:\e[0m"
            select yn in "Instalar VPS" "Configurar VPS/Puertos/Etc" "Usuarios" "Cerrar"; do
              case $yn in
                    "Instalar VPS") bash Instalacion ; exit;;
-                    "Configurar VPS/Puertos/Etc") bash expiracion ; exit;;
+                    "Configurar VPS/Puertos/Etc") bash Configuracion ; exit;;
                     "Usuarios") bash menuuser; exit;;
                     "Cerrar") exit ;;
 esac
