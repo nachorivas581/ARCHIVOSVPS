@@ -1,11 +1,11 @@
 #!bin/bash
 
 echo -e "\e[32mSeleccione Una Opcion:\e[0m"
-           select yn in "1)Instalar VPS" "2)Configurar VPS/Puertos/Etc" "3)Usuarios" "4)Cerrar"; do
+           select yn in "Instalar VPS" "Configurar VPS/Puertos/Etc" "Usuarios" "4)Cerrar"; do
              case $yn in
-                   "1) Instalar VPS") bash Instalacion ; exit;;
-                   "2) Configurar VPS/Puertos/Etc") bash expiracion ; exit;;
-                    "3) Usuarios") bash menuuser; exit;;
-                    "4) Cerrar") exit ;;
+                   "Instalar VPS") bash Instalacion ; exit;;
+                    "Configurar VPS/Puertos/Etc") bash expiracion ; exit;;
+                    "Usuarios") bash menuuser; exit;;
+                    "Cerrar") exit ;;
 esac
 done
