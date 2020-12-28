@@ -1,10 +1,5 @@
 #!/bin/bash
-echo "░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗██╗░░░██╗██████╗░░██████╗";
-echo "██╔════╝██║░░██║██╔══██╗██╔══██╗██║░██╔╝██║░░░██║██╔══██╗██╔════╝";
-echo "╚█████╗░███████║███████║██████╔╝█████═╝░╚██╗░██╔╝██████╔╝╚█████╗░";
-echo  "╚═══██╗██╔══██║██╔══██║██╔══██╗██╔═██╗░░╚████╔╝░██╔═══╝░░╚═══██╗";
-echo "██████╔╝██║░░██║██║░░██║██║░░██║██║░╚██╗░░╚██╔╝░░██║░░░░░██████╔╝";
-echo "╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░╚═════╝░";
+echo -e "\e[106m Menu De configuracion\e[0m"
 
 sleep 3 ; echo -e "\e[7mComenzando Configuraciones!\e[0m" ; sleep 3 ; echo -e "\e[32mSi eres de android cambia el puerto por 8022!\e[0m";sleep 2 ; echo -e "\e[32mSi no lo eres pon el puerto 443 y guarda los cambios\e[0m"
 sleep 6 ; nano /etc/dropbear/run ; echo Finalizado
