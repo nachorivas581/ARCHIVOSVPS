@@ -4,3 +4,12 @@ echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
 
 echo "El usuario seleccionado es: $Nombre"
+
+sleep 3 ;echo -e "\e[7mQue deseas hacer?\e[0m"
+           select yn in "Modificar Password" "Modificar Fecha de expiracion" "Volver al menu principal" ; do
+             case $yn in
+                   "Modificar Contraseña") passwd $Nombre ;break ; exit;;
+                   "Modificar Fecha de expiracion") bash expiracion ; exit;;
+                    "Volver al menu principal") VPS ; exit;;
+esac
+done
