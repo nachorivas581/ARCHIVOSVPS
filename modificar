@@ -2,7 +2,7 @@
 sleep 3 ;echo -e "\e[7mQue deseas hacer?\e[0m"
            select yn in "Modificar Password" "Modificar Fecha de expiracion" "Volver al menu principal" ; do
              case $yn in
-                   "Modificar Password") passwd $Nombre ; clear ; bash modificar;;
+                   "Modificar Password") bash password ; clear ; bash modificar;;
                    "Modificar Fecha de expiracion") bash expiracion ; clear ;bash modificar;;
                     "Volver al menu principal") bash adm 
 esac
