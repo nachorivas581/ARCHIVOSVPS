@@ -2,6 +2,6 @@
 echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
 echo "El usuario seleccionado es: $Nombre"
-echo -e "\e[32mElimnando...:\e[0m"
+echo -e "\e[32mEliminando...:\e[0m"
 sleep 3
-deluser $Nombre; rm-rf $Nombre ; sleep 2 ;echo "USUARIO ELIMINADO CON EXITO"
+deluser $Nombre; rm-rf $Nombre ; sleep 2 ;echo "USUARIO ELIMINADO CON EXITO" ; bash adm
