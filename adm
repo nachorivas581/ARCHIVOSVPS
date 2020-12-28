@@ -1,5 +1,5 @@
 #!bin/bash
-echo -e "\e[41m CONSOLA VPS-ARG By:Sharklight:\e[0m"
+echo -e      "\e[41m CONSOLA VPS-ARG By :SharkLight\e[0m"
 
 echo -e "\e[32mSeleccione Una Opcion:\e[0m"
            select yn in "Instalar VPS" "Configurar VPS/Puertos/Etc" "Usuarios" "Cerrar"; do
