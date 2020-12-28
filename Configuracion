@@ -3,11 +3,11 @@ echo -e "\e[106m Menu De configuracion\e[0m"
  select yn in "Dropbear" "Proxy Abono" "Volver al menu principal" ; do
              case $yn in
                    "Dropbear") sleep 3 ; echo -e "\e[32mSi eres de android cambia el puerto por 8022!\e[0m";sleep 2 ; echo -e "\e[32mSi no lo eres pon el puerto 443 y guarda los cambios\e[0m" ;
-sleep 6 ; nano /etc/dropbear/run ; echo Finalizado ; sleep 1 ; echo -e "\e[7mEl Dropbear ha sido configurado!\e[0m";break ; exit;;
+sleep 6 ; nano /etc/dropbear/run ; echo Finalizado ; sleep 1 ; echo -e "\e[7mEl Dropbear ha sido configurado!\e[0m" ; break ; bash Configuracion;;
                    "Proxy Abono") sleep 3 ; echo -e "\e[7mComenzando Configuracion del proxy abono!\e[0m"  
 sleep 2 ; echo -e "\e[32mRecuerda solo modificar las ip y los nombres!\e[0m" ;sleep 2 ; nano Proxypython.py ;
-sleep 3 ; echo -e"\e[7mCorrecto!\e[0m" ; exit;;
-                    "Volver al menu principal") bash VPS ; exit;;
+sleep 3 ; echo -e "\e[7mCorrecto!\e[0m" ; bash Configuracion ;;
+                    "Volver al menu principal") bash adm ; exit;;
 esac
 done
 
