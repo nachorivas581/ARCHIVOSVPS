@@ -1,14 +1,17 @@
 #!/bin/bash
 echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
-echo "Su nombre es $Nombre"
 echo -e "\e[32mDigite Dia (TIPO DD/)expiracion:\e[0m"
-read $Dia
-echo "$Dia"
+read Dia
 echo -e "\e[32mDigite Mes (tipo MM/) expiracion:\e[0m"
-read $Mes
-echo "$Mes"
+read Mes
 echo -e "\e[32mDigite Ano (tipo /AAAA) expiracion:\e[0m"
 read $Ano
-echo "$Ano"
-adduser - m -e $Dia-$Mes-$Ano $Nombre
+adduser -m -e $Dia-$Mes-$Ano $Nombre
+sleep 3;echo -e "\e[32mUsuario Creado Con Exito!\e[0m"
+sleep 2; echo "Sus datos son:
+Usuario: $Nombre
+Fecha de expiracion : $Dia-$Mes-$Ano
+By:SharkLight"
+sleep 2;echo -e "\e[32mCree un password para el usuario\e[0m"
+passwd $Nombre ;sleep 3; echo " Felicidades ya puede usar su usuario"
