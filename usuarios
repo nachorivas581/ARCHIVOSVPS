@@ -7,8 +7,8 @@ read $Dia
 echo "Dias $Dia"
 echo -e "\e[32mDigite Mes (tipo MM/) duracion:\e[0m"
 read $Mes
-echo "Mes $Mes
-echo -e "\e[32mDigite AÑO (tipo /AAAA) duracion:\e[0m"
-read $AÑO
-echo " AÑO $AÑO"
-adduser - m -e $Dia-$Mes-AÑO $Nombre
+echo "Mes $Mes"
+echo -e "\e[32mDigite Ano (tipo /AAAA) duracion:\e[0m"
+read $Ano
+echo "AÑO $Ano"
+adduser - m -e $Dia-$Mes-$Ano $Nombre
