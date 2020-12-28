@@ -1,0 +1,9 @@
+#!bin/bash
+
+sleep 3 ;echo -e "\e[7mQue deseas hacer?\e[0m"
+           select yn in "Modificar Password" "Modificar Usuario" "Eliminar Usuario" ; do
+             case $yn in
+                   "Crear Usuario") bash usuarios ;break ; exit;;
+                   "Modificar Usuario") bash modificar ; exit;;
+                    "Eliminar Usuario") bash eliminar ; exit;;
+esac
