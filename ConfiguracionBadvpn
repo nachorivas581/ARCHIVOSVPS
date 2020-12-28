@@ -1,3 +1,0 @@
-#!/bin/bash
-sleep 2 ; echo "En caso de que no este activado el dropbear  ubica el  NO_START:1 y Cambialo por NO_START:0 Y GUARDA LA CONFIGURACION"
-sleep 5 ; nano /etc/init.d/dropbear ; echo  Finalizado
