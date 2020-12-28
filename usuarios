@@ -1,5 +1,4 @@
 #!/bin/bash
 echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
-echo "
 adduser $Nombre
