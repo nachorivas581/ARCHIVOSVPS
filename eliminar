@@ -6,4 +6,4 @@ read Nombre
 echo "El usuario seleccionado es: $Nombre"
 echo -e "\e[32mEliminando...:\e[0m"
 sleep 3
-deluser $Nombre; rm-rf $Nombre ; sleep 2 ;echo "USUARIO ELIMINADO CON EXITO" ; bash adm
+deluser $Nombre; rm-rf $Nombre ; sleep 2 ;echo "USUARIO ELIMINADO CON EXITO" ; bash menuuser
