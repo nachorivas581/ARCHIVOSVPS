@@ -1,4 +1,7 @@
 #!/bin/bash
+echo -e      "\e[41m CONSOLA VPS-ARG By :SharkLight\e[0m"
+
+
 echo -e "\e[32mDigite Nombre de usuario VPS:\e[0m"
 read Nombre
 echo -e "\e[32mDigite Dia (TIPO DD/)expiracion:\e[0m"
