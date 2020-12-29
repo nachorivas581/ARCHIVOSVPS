@@ -13,3 +13,4 @@ sleep 3 ;echo -e "\e[31mCerrando en...\e[0m"
 sleep 3 ;echo -e "\e[31m3\e[0m"
 sleep 3 ;echo -e "\e[31m2\e[0m"
 sleep 3 ;echo -e "\e[31m1\e[0m"
+exit
