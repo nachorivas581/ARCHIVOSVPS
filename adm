@@ -2,11 +2,12 @@
 echo -e      "\e[41m CONSOLA VPS-ARG By :SharkLight\e[0m"
 
 echo -e "\e[32mSeleccione Una Opcion:\e[0m"
-           select yn in "Instalar VPS" "Configurar VPS/Puertos/Etc" "Usuarios" "Cerrar"; do
+           select yn in "Instalar VPS" "Configurar VPS/Puertos/Etc" "Usuarios" "Cerrar" "Autostart"; do
              case $yn in
                    "Instalar VPS") bash Instalacion ; exit;;
                     "Configurar VPS/Puertos/Etc") bash Configuracion ; exit;;
                     "Usuarios") bash menuuser; exit;;
+                    "AutoStart") cd /usr/local/bin ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Autostart ; chmod u+x Autostart ; chmod 0750 Autostart ; echo "Instalacion Finalizada Tipea Autostart Para iniciar los servicios Automaticamente" ; exit ;;
                     "Cerrar") exit ;;
 esac
 done
