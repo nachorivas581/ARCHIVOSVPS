@@ -1,4 +1,5 @@
-#!bin/bash
+#!/bin/bash
+echo -e      "\e[41m CONSOLA VPS-ARG By :SharkLight\e[0m"
 
 sleep 3 ;echo -e "\e[7mQue deseas hacer?\e[0m"
            select yn in "Crear Usuario" "Modificar Usuario" "Eliminar Usuario" ; do
