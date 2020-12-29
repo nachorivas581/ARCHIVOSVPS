@@ -20,11 +20,11 @@ sleep 6 ;echo -e "\e[7mDescargando Archivos\e[0m"; sleep 3 ; echo -e "\e[36mDesc
 sleep 2 ;echo -e "\e[32mCORRECTO!\e[0m" 
 sleep 3 ; echo -e "\e[36mDescargando Python\e[36m" && sleep 2;apt-get install python -y ;apt-get install python2 -y;apt install python-pip -y
 sleep 4 ;echo -e "\e[36mDescargando Proxy Abono\e[0m"
-sleep 2 ; cd /etc/ARCHIVOSVPS/ ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Proxypython.py
+sleep 2 ; mkdir /etc/VPS ; cd /etc/VPS/ ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/Proxypython.py
 sleep 3 ; echo ">>>Instalaremos Todo lo necesario Se paciente<<<"
 sleep 2 ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/adm ; wget  https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/eliminar ; wget  https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/expiracion ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/menuuser ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/modificar ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/password ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/rc.local ; wget https://raw.githubusercontent.com/nachorivas581/ARCHIVOSVPS/main/usuarios ; cp adm /usr/local/bin ; cd /usr/local/bin ; chmod u+x adm ; chmod 0750 adm 
 sleep 2 ;echo -e "\e[32mCORRECTO!\e[0m
-echo  LIBERANDO ARCHIVOS RESIDUALES
+cd ; echo  LIBERANDO ARCHIVOS RESIDUALES
 sleep 3 ; echo -e "\e[7mEliminando Archivos no necesarios\e[0m" 
 sleep 3; echo ">>>Eliminando Instalacion<<<"
 sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;rm Instalacion ; echo "ELIMINADA CON EXITO"
