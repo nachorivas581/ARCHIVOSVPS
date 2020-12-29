@@ -29,5 +29,5 @@ sleep 3 ; echo -e "\e[7mEliminando Archivos no necesarios\e[0m"
 sleep 3; echo ">>>Eliminando Instalacion<<<"
 sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;sleep 2; echo . ;rm Instalacion ; echo "ELIMINADA CON EXITO"
 sleep 3 ;echo -e "\e[7mArchivos Eliminados Con exito\e[0m"
-sleep 3 ; echo -e "\e[7mEscribe adm para ejecutar el script! \e[0m" ; cd  
+sleep 3 ; echo -e "\e[7mEscribe adm para ejecutar el script! \e[0m" 
 exit
